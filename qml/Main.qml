@@ -62,8 +62,14 @@ MainView {
             onClicked : {
                 console.log("start");
                 alarm.date = new Date();
+                //date.setMinutes(date.getMinutes() + minutes);
+                var date = new Date();
+                date.setMinutes(date.getMinutes() +2);
+                console.log(date);
+                alarm.date = date;
                 console.log(alarm.date);
-                
+                alarm.message = 'the break is over';
+                alarm.save();
             }
 
         }

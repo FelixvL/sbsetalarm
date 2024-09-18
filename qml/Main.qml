@@ -30,6 +30,10 @@ MainView {
     height: units.gu(75)
 
     Page {
+        Alarm{
+            id: alarm
+
+        }
         anchors.fill: parent
 
         header: PageHeader {
@@ -48,6 +52,20 @@ MainView {
 
             verticalAlignment: Label.AlignVCenter
             horizontalAlignment: Label.AlignHCenter
+        }
+        Button{
+            text: 'Click Here'
+            anchors{
+                centerIn: parent
+
+            }
+            onClicked : {
+                console.log("start");
+                alarm.date = new Date();
+                console.log(alarm.date);
+                
+            }
+
         }
     }
 }

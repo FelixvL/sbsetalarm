@@ -1,0 +1,15 @@
+{
+    "name": "sbsetalarm.sertf",
+    "description": "Sandbox Set Alarm",
+    "architecture": "@CLICK_ARCH@",
+    "title": "SBSetAlarm",
+    "hooks": {
+        "sbsetalarm": {
+            "apparmor": "sbsetalarm.apparmor",
+            "desktop":  "sbsetalarm.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "sertf <w@er.tf>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}
